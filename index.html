@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for this template */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 60px;
+        }
+        .jumbotron {
+            background-image: url(home.png);
+            background-size: cover;
+            color: #0b0a0a;
+            text-align: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+        .jumbotron h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .jumbotron p {
+            font-size: 1.5rem;
+        }
+        .services {
+            background-color: #fff;
+            padding: 80px 0;
+        }
+        .services h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .services .row {
+            justify-content: center;
+        }
+        .service-item {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .service-item i {
+            font-size: 3rem;
+            color: #101010;
+            margin-bottom: 10px;
+        }
+        .service-item h3 {
+            font-size: 1.8rem;
+        }
+        .testimonials {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .testimonial {
+            margin-bottom: 40px;
+        }
+        .testimonial p {
+            font-size: 1.2rem;
+        }
+        .contact-form {
+            background-color: #007bff;
+            color: #fff;
+            padding: 80px 0;
+        }
+        .contact-form h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contact-form form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        .contact-form button {
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #f0f0f0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Your Business</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Welcome to Your Business</h1>
+        <p class="lead">We provide innovative solutions to help your business grow.</p>
+        <a class="btn btn-primary btn-lg" href="#services" role="button">Learn More</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business Consulting</h3>
+                    <p>We offer expert advice to optimize your business strategies.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-item">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Technical Solutions</h3>
+                    <p>Advanced technological solutions tailored to your needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Customer Support</h3>
+                    <p>24/7 support to ensure your customers are always satisfied.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="testimonial">
+                    <p>"Great service! The team helped us achieve our goals efficiently."</p>
+                    <p class="text-muted">- John Doe, CEO at ABC Company</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Highly recommended! They exceeded our expectations."</p>
+                    <p class="text-muted">- Jane Smith, Marketing Director at XYZ Inc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-form">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Your Business. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
